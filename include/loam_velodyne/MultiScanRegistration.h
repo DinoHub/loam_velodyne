@@ -87,7 +87,9 @@ public:
 
   /** Multi scan mapper for Velodyne HDL-64E according to data sheet. */
   static inline MultiScanMapper Velodyne_HDL_64E() { return MultiScanMapper(-24.9f, 2, 64); };
-
+  
+  /** For Ouster OS1-32. */ 
+  static inline MultiScanMapper Ouster_OS1_32() { return MultiScanMapper(-22.5f, 22.5f, 32); };
 
 private:
   float _lowerBound;      ///< the vertical angle of the first scan ring
